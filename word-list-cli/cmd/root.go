@@ -8,12 +8,15 @@ import (
 
 var flagNoArmor bool
 
+var Version = "develop"
+
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:     "word-list-cli",
-	Version: "0.0.1",
+	Version: Version,
 	Short:   "word-list-cli is utility for encoding and decoding binary data to different mnemonic world lists",
-	Long: `Utility for encoding and decoding binary data to different
+	Long: `word-list-cli v` + Version + `
+Utility for encoding and decoding binary data to different
 mnemonic world lists. Currently only BIP39 is supported.
 
 Utility supports encoding data of any length, it is rather
