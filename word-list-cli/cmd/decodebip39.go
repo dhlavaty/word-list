@@ -42,7 +42,7 @@ https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
 				binary.Write(os.Stdout, binary.LittleEndian, b)
 			}
 			if err := scanner.Err(); err != nil {
-				fmt.Fprintln(os.Stderr, "error reading standard input: %v", err)
+				fmt.Fprintln(os.Stderr, "error reading standard input:", err)
 				return
 			}
 

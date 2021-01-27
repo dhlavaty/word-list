@@ -88,4 +88,9 @@ $ echo -n '123' | go run word-list-cli bip39
 $ echo -n 'couple muscles trumpet+abuse' | go run word-list-cli decodebip39 > out.bin
 
 $ echo -n "123456789" | od -A n -t x1
+
+# releasing
+
+$ go mod tidy
+$ go test ./...
 ```
