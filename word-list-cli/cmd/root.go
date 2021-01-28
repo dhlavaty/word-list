@@ -24,7 +24,7 @@ practical for storing a small amount of data. For example
 to encode passwords, passphrases or cryptographic keys and
 print then on paper.
 
-Source code: TODO
+Source code: https://github.com/dhlavaty/word-list
 `,
 }
 
