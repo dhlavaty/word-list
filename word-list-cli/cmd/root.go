@@ -14,10 +14,10 @@ var Version = "develop"
 var rootCmd = &cobra.Command{
 	Use:     "word-list-cli",
 	Version: Version,
-	Short:   "word-list-cli is utility for encoding and decoding binary data to different mnemonic world lists",
+	Short:   "word-list-cli is utility for encoding and decoding binary data to different mnemonic word lists",
 	Long: `word-list-cli v` + Version + `
 Utility for encoding and decoding binary data to different
-mnemonic world lists. Currently only BIP39 is supported.
+mnemonic word lists. Currently only BIP39 is supported.
 
 Utility supports encoding data of any length, it is rather
 practical for storing a small amount of data. For example

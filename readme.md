@@ -1,6 +1,6 @@
 # word-list-cli
 
-Utility for encoding and decoding binary data to different mnemonic world lists. _Currently only BIP39 is supported._
+Utility for encoding and decoding binary data to different mnemonic word lists. _Currently only BIP39 is supported._
 
 Mnemonic code or mnemonic sentences are a group of easy to remember words. A mnemonic code or sentence is superior for human interaction compared to the handling of raw binary or hexadecimal representations of data. The sentence could be written on paper or spoken over the telephone.
 
@@ -8,7 +8,7 @@ Although this utility supports encoding data of any length, it is rather practic
 
 ## BIP39
 
-Encoding binary data to mnemonic BIP39 world list is **100% compatible** with BIP39 deterministic keys. For more info see https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
+Encoding binary data to mnemonic BIP39 word list is **100% compatible** with BIP39 deterministic keys. For more info see https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
 
 ### Example
 

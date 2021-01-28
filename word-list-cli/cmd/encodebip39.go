@@ -12,8 +12,8 @@ import (
 var (
 	bip39Cmd = &cobra.Command{
 		Use:   "bip39",
-		Short: "Encode binary data to BIP39 world list",
-		Long: `Encode binary data to mnemonic BIP39 world list. Output is
+		Short: "Encode binary data to BIP39 word list",
+		Long: `Encode binary data to mnemonic BIP39 word list. Output is
 100% compatible with BIP39 deterministic keys. Unlike original
 BIP39 algorithm, used for deterministic crypto currency keys,
 this tool supports encoding any binary data of any length.

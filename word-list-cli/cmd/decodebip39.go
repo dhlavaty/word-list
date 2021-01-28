@@ -14,8 +14,8 @@ import (
 var (
 	decodeBip39Cmd = &cobra.Command{
 		Use:   "decodebip39",
-		Short: "Decode BIP39 world list back to binary data",
-		Long: `Decode mnemonic BIP39 world list back to binary data.
+		Short: "Decode BIP39 word list back to binary data",
+		Long: `Decode mnemonic BIP39 word list back to binary data.
 
 For original BIP39 spec see:
 https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
