@@ -15,6 +15,11 @@ go clean -i
 env GOOS=darwin GOARCH=amd64 go build -ldflags "-X 'word-list-cli/cmd.Version=$1'" word-list-cli
 tar -czvf word-list-cli-$1-macos-amd64.tar.gz ./word-list-cli
 
+# for ARM (for example Raspberry Pi)
+go clean -i
+env GOOS=linux GOARCH=arm GOARM=5 go build -ldflags "-X 'word-list-cli/cmd.Version=$1'" word-list-cli
+tar -czvf word-list-cli-$1-linux-arm64-raspberrypi.tar.gz ./word-list-cli
+
 # for Windows amd64
 apt update
 apt-get install zip

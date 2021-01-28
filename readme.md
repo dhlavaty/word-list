@@ -47,6 +47,25 @@ couple muscle snack heavy gloom orchard tone
 -----END BIP39-----
 ```
 
+Decoding BIP39 word list back to binary
+
+```sh
+$ cat output.txt
+-----BEGIN BIP39-----
+couple muscle snack heavy gloom orchard tone
+-----END BIP39-----
+
+$ word-list-cli decodebip39 < output.txt > decoded-file.bin
+
+$ cat decoded-file.bin
+123456789
+
+# double-check that binary files are same
+$ shasum *.bin
+f7c3bc1d808e04732adf679965ccc34ca7ae3441  input-file.bin
+f7c3bc1d808e04732adf679965ccc34ca7ae3441  decoded-file.bin
+```
+
 ## BIP39+ specs
 
 Unlike original BIP39 algorithm, used for deterministic crypto currency keys, `word-list-cli` tool supports encoding binary data of any length. We call it **BIP39+** (_BIP39 Plus_)
