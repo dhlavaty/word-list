@@ -16,13 +16,14 @@ var rootCmd = &cobra.Command{
 	Version: Version,
 	Short:   "word-list-cli is utility for encoding and decoding binary data to different mnemonic word lists",
 	Long: `word-list-cli v` + Version + `
-Utility for encoding and decoding binary data to different
-mnemonic word lists. Currently only BIP39 is supported.
 
-Utility supports encoding data of any length, it is rather
-practical for storing a small amount of data. For example
-to encode passwords, passphrases or cryptographic keys and
-print then on paper.
+Utility for encoding and decoding binary data to different
+mnemonic word lists. BIP39 and PGP algorithms are supported.
+
+Utility supports encoding data of any length, although it is
+rather practical for storing a small amount of data. For
+example to encode passwords, passphrases or cryptographic
+keys and print then on paper.
 
 Source code: https://github.com/dhlavaty/word-list
 `,
