@@ -7,7 +7,7 @@ go test ./...
 
 # default (in Docker) is 'linux amd64'
 go clean -i
-go build -ldflags "-X 'word-list-cli/cmd.Version=$1'" word-list-cli
+env CGO_ENABLED=0 go build -ldflags "-X 'word-list-cli/cmd.Version=$1'" word-list-cli
 tar -czvf word-list-cli-$1-linux-amd64.tar.gz ./word-list-cli
 
 # for MacOS Intel
