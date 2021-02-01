@@ -73,7 +73,7 @@ Unlike original BIP39 algorithm, used for deterministic crypto currency keys, `w
 BIP39 was designed to support binary data's length that is a multiple of 32 bits. To support data of any length, we
 came up with an extension, that is 100% backwards compatible with BIP39.
 
-BIP39 encodes into 11 bits words, where input data is padded by checksum. If data length is a multiple of 32 bits, the checksum bits are not longer that 8 bits. In cases, when the checksum is 9, 10 or 11 bits long, we will add a `PLUS WORD` to our very last word. This will signalize, how many bits is in the checksum. For 9 last bits, it is a word "`+abuse`", as that is at the 9th word in BIP39 dictionary.
+BIP39 encodes into 11 bits words, where input data is padded by checksum. If data length is a multiple of 32 bits, the checksum bits are not longer that 8 bits. In cases, when the checksum is 9, 10 or 11 bits long, we will add a `PLUS WORD` to our very last word. This will signalize, how many bits is in the checksum. For 9 bit checksum, it is a word "`+abuse`", as that is 9th word in BIP39 dictionary.
 
 #### Example of BIP39+
 
